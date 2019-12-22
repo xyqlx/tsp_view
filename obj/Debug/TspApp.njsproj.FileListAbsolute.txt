@@ -1,0 +1,2 @@
+C:\activity\course\人工智能Ⅰ\实验\实验8\TspApp\TspApp\obj\Debug\TspApp.njsprojAssemblyReference.cache
+C:\activity\course\人工智能Ⅰ\实验\实验8\TspApp\TspApp\bin\Microsoft.NodejsTools.WebRole.dll
