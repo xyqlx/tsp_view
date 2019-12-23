@@ -36,8 +36,8 @@ export default {
     return {
       group_population: 200,
       max_generation: 2000,
-      cross_probability: 0.85,
-      mutation_probability: 0.15
+      cross_probability: 0.5,
+      mutation_probability: 0.05
     };
   },
   computed: {},

@@ -9,7 +9,7 @@ class Genetic{
             for(let j = 0; j < i; ++j){
                 this.route[i][j] = this.route[j][i] = Math.sqrt(
                     Math.pow(dataset[i][0]-dataset[j][0], 2)+
-                    Math.pow(dataset[i][0] - dataset[j][0], 2)
+                    Math.pow(dataset[i][1] - dataset[j][1], 2)
                 )
             }
             this.route[i][i] = 0; 
@@ -96,8 +96,13 @@ class Genetic{
         this.mutate()
         this.fitness_values = Array.from(this.group, this.fitness)
         this.best_route = this.group[this.fitness_values.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0)];
+        // window.console.log(this.best_route)
+        // window.console.log(this.route_length(this.best_route))
+        //this.best_route = []
+        // best_route.forEach(x=>this.best_route.push(x))
         this.best_route_length = this.route_length(this.best_route)
-        return this.generation < this.info.max_generation
+        this.generation++
+        return this.generation >= this.info.max_generation
     }
 }
 

@@ -4,8 +4,8 @@
       <p slot="title">当前运行</p>
       <CellGroup>
         <Cell v-for="task in tasks" :key="task.key">
-          {{task.algorithm_label}}
-          <p slot="label">{{task.dataset_label}}</p>
+          <p :style="{color:task.color}">{{task.algorithm_label}}</p>
+          <p slot="label" :style="{color:task.color}">{{task.dataset_label}}</p>
           <Divider slot="extra" type="vertical" />
           <Button shape="circle" @click="cancel_task(task.key)" slot="extra" type="text">
             <Icon type="md-close"></Icon>
@@ -20,11 +20,6 @@
 import {mapState} from 'vuex'
 export default {
   name: "TaskBar",
-  data() {
-    return {
-      
-    }
-  },
   computed:{
       ...mapState([
         'tasks'
