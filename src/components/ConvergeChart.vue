@@ -2,11 +2,13 @@
   <div class="converge-chart">
     <i-Col span="12">
       <Card class="chart-card">
+        <p slot="title">路径长度-迭代次数</p>
         <line-chart ref="line_chart"></line-chart>
       </Card>
     </i-Col>
     <i-Col span="12">
       <Card class="chart-card">
+        <p slot="title">当前最优路径</p>
         <city-chart ref='cityChart'/>
       </Card>
     </i-Col>
