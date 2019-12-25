@@ -8,11 +8,11 @@ export default new Vuex.Store({
         dataset_name: 'circle',
         dataset_names: [
             {
-                label: "圆形造形术",
+                label: "圆形",
                 value: "circle"
             },
             {
-                label: "方形造形术",
+                label: "方形",
                 value: "square"
             }
         ],

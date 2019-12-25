@@ -1,6 +1,5 @@
 <template>
     <div class="parameter-bar">
-        <p>this is a greedy example</p>
         <button @click="add_task">开始计算</button>
     </div>
 </template>
