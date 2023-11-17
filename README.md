@@ -1,4 +1,6 @@
-# 实验8 自适应遗传算法
+# Visual demonstration of adaptive genetic algorithm for solving TSP problem
+
+Cloned from <https://gitee.com/xyqlx/tsp_app> and <https://gitee.com/xyqlx/tsp_view>
 
 ## 传统遗传算法
 
